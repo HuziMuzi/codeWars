@@ -6,3 +6,14 @@ function sum (numbers) {
 	}
 	return out	
 };
+
+args = [78,56,232,12,8]
+class SmallestIntegerFinder {
+	findSmallestInt(args) {
+    let out = args[0];
+		for(let i = 0; i < args.length; i++){
+			if(args[i] < out) out = args[i]
+		}
+    return out
+	}
+ }
