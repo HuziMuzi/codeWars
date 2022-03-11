@@ -17,3 +17,14 @@ class SmallestIntegerFinder {
     return out
 	}
  }
+
+ function paperwork(n, m) {
+	let res
+	  if(n < 0 || m < 0){
+		 res = 0;
+	  } else {
+		 res = n * m
+	  }
+	 return res
+ }
+ 
