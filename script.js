@@ -59,3 +59,10 @@ function makeNegative(num) {
 	// }
 }
 console.log(makeNegative(0))
+
+function digitize(n) {
+	let num = ('' + n).split('').reverse().map((i)=>{return Number(i)})
+	return num
+}
+
+console.log(digitize(0))
