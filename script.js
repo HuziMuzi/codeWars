@@ -58,11 +58,17 @@ function makeNegative(num) {
 	// 	return num
 	// }
 }
-console.log(makeNegative(0))
+// console.log(makeNegative(0))
 
 function digitize(n) {
 	let num = ('' + n).split('').reverse().map((i)=>{return Number(i)})
 	return num
 }
 
-console.log(digitize(0))
+// console.log(digitize(0))
+
+function grow(x){
+	return x.reduce((prev,curr) => prev * curr) 
+}
+
+console.log(grow([1,2,3,4,5]))
