@@ -93,3 +93,7 @@ function squareSum(numbers){
 
 squareSum([4,5])
 
+function numberToString(num) {
+	// Return a string of the number here!
+	return String(num)
+}
