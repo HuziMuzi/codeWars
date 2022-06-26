@@ -82,3 +82,14 @@ const reverseSeq = n => {
  };
 
  console.log(reverseSeq(7))
+
+
+function squareSum(numbers){
+	let out = 0
+	for (let i = 0; i < numbers.length; i++){
+		out += numbers[i]*numbers[i]
+	}
+}
+
+squareSum([4,5])
+
