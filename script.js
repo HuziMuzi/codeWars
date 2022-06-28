@@ -102,3 +102,17 @@ function numberToString(num) {
 function booleanToString(b){
 	return String(b)
 }
+
+// function findSmallestInt(args) {
+// 	let smallNum = args[0]
+// 	for(let i = 0; i < args.length; i++) {
+// 		if(smallNum > args[i]) smallNum = args[i]
+// 	}
+// 	return smallNum
+// }
+
+function findSmallestInt(args) {
+	console.log(...args)
+	return (Math.min(...args))
+}
+console.log(findSmallestInt([1,2,3,4,5,6]))
