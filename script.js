@@ -71,7 +71,7 @@ function grow(x){
 	return x.reduce((prev,curr) => prev * curr) 
 }
 
-console.log(grow([1,2,3,4,5]))
+// console.log(grow([1,2,3,4,5]))
 
 const reverseSeq = n => {
 	let arr = []
@@ -81,7 +81,7 @@ const reverseSeq = n => {
 	return arr;
  };
 
- console.log(reverseSeq(7))
+ // console.log(reverseSeq(7))
 
 
 function squareSum(numbers){
@@ -112,12 +112,28 @@ function booleanToString(b){
 // }
 
 function findSmallestInt(args) {
-	console.log(...args)
+	// console.log(...args)
 	return (Math.min(...args))
 }
-console.log(findSmallestInt([1,2,3,4,5,6]))
+// console.log(findSmallestInt([1,2,3,4,5,6]))
 
 function opposite(number) {
 	//your code here
 	return -number
 }
+
+function fakeBin(x){
+	let res = x.split('')
+	let num = ''
+	for (let i = 0; i < res.length; i++) {
+		if (Number(res[i] < 5)) {
+			num +=('0')
+		} else {
+			num +=('1')
+		}
+	}
+	return num
+}
+
+
+fakeBin('123456')
