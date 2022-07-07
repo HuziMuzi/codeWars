@@ -124,6 +124,7 @@ function opposite(number) {
 
 function fakeBin(x){
 	let res = x.split('')
+	console.log(res)
 	let num = ''
 	for (let i = 0; i < res.length; i++) {
 		if (Number(res[i] < 5)) {
@@ -136,4 +137,15 @@ function fakeBin(x){
 }
 
 
-fakeBin('123456')
+function fakeBin(x) {
+	return x.split('').map(n => n < 5 ? 0 : 1).join('')
+}
+
+console.log(fakeBin('123456'))
+
+
+function doubleInteger(i) {
+	// i will be an integer. Double it and return it.
+	return i*2;
+}
+console.log(doubleInteger(2))
