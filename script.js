@@ -149,3 +149,7 @@ function doubleInteger(i) {
 	return i*2;
 }
 console.log(doubleInteger(2))
+
+function makeNegative(num) {
+	return num > 0 ? -num : num
+}
