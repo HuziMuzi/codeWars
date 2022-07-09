@@ -153,3 +153,10 @@ console.log(doubleInteger(2))
 function makeNegative(num) {
 	return num > 0 ? -num : num
 }
+
+function digitize(n) {
+	//code here
+	return String(n).split('').reverse().map(el=> parseFloat(el))
+}
+
+console.log(digitize(123456879))
