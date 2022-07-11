@@ -182,4 +182,12 @@ function setAlarm(employed, vacation) {
     return employed && !vacation;
 }
 
-console.log(setAlarm(true, true))
+// console.log(setAlarm(true, true))
+
+
+function removeChar(str){
+    //You got this!
+    return str.split('').slice(1,str.length-1).join('')
+};
+
+console.log(removeChar('qwerasdf'))
