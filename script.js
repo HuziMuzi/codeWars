@@ -199,3 +199,9 @@ function reverseWords(str) {
 }
 
 console.log(reverseWords("This is an example!"))
+
+function solution(str){
+    console.log(str.split('').reverse().join(''))
+}
+
+solution('world')
