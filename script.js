@@ -218,3 +218,12 @@ function paperwork(n, m) {
 }
 
 console.log(paperwork(5,5))
+
+const friends = ["Ryan", "Kieran", "Mark"]
+
+function friend(friends){
+    //your code here
+    return friends.filter(el => el.length === 4)
+}
+
+console.log(friend(friends))
