@@ -32,7 +32,7 @@ function paperwork(n, m) {
 // function paperwork(n, m) {
 //   return n > 0 && m > 0 ? n * m : 0
 // }
-let arr = [4, '5', '7']
+// let arr = [4, '5', '7']
 
 function sumMix(x) {
     let res = 0;
@@ -226,4 +226,14 @@ function friend(friends){
     return friends.filter(el => el.length === 4)
 }
 
-console.log(friend(friends))
+// console.log(friend(friends))
+
+
+let arr = [1,-2,3,-4,5]
+
+function invert(array) {
+    return array.map(el => -el )
+}
+
+console.log(invert(arr))
+// console.log(arr[0])
