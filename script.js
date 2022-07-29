@@ -268,10 +268,53 @@ const array1 = [true,  true,  true,  false,
 
 
 function countSheeps(arrayOfSheep) {
-    return arrayOfSheep.filter(Boolean).length
+    return arrayOfSheep.filter(el => Boolean(el)).length
 }
 
 
 console.log(countSheeps(array1))
 
-console.log(typeof Boolean)
+// console.log(typeof Boolean)
+
+
+btn.addEventListener('click', square)
+
+function square (){
+    let a = +prompt('Введите a')
+    let b = +prompt('Введите b')
+    let c = +prompt('Введите c')
+    let disc = (b*b) - (4*a*c)
+    if (disc < 0) {
+     return alert('Нет корней')
+    }
+    if (disc === 0) {
+        let x = -b/(2*a)
+        return alert('Уравнение имеет один корень ' + x)
+    }
+    if (disc > 0) {
+        let x1 = Math.floor((-b) + Math.sqrt(disc))/(2*a)
+        let x2 = Math.floor((-b) - Math.sqrt(disc))/(2*a)
+        return alert('x1= ' + x1 + ' ' + 'x2= ' + x2)
+    }
+}
+
+
+
+// function square (a,b,c){
+//
+//
+//     // console.log(a,b,c)
+//     let disc = (b*b) - (4*a*c)
+//     if (disc < 0) {
+//         return 'Нет корней'
+//     }
+//     if (disc === 0) {
+//         let x = -b/(2*a)
+//         return ('Уравнение имеет один корень ' + x)
+//     }
+//     if (disc > 0) {
+//         let x1 = ((-b) + Math.sqrt(disc))/(2*a)
+//         let x2 = ((-b) - Math.sqrt(disc))/(2*a)
+//         return  ('x1= ' + x1 + ' ' + 'x2= ' + x2)
+//     }
+// }
