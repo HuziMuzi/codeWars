@@ -237,3 +237,12 @@ function invert(array) {
 
 console.log(invert(arr))
 // console.log(arr[0])
+
+
+function areYouPlayingBanjo(name) {
+    let letter = name.split('')
+   return letter[0] ==='R' || letter[0] ==='r' ? `${name} plays banjo` :`${name} does not play banjo`
+}
+
+
+console.log(areYouPlayingBanjo('Rana'))
