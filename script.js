@@ -334,3 +334,20 @@ console.log(
     sumTwoSmallestNumbers([15, 28, 4, 2, 43])
 
 )
+
+
+// function XO(str) {
+//     //code here
+//     let arr = str.toLowerCase().split('')
+//     let arrX = arr.filter(el => el === 'x' ? el : '')
+//     let arrO = arr.filter(el => el === 'o' ? el : '')
+//     return arrX.length === arrO.length
+// }
+
+function XO(str) {
+    //code here
+    let arr = str.toLowerCase().split('')
+    return arr.filter(el => el === 'x').length === arr.filter(el => el === 'o').length
+}
+
+console.log(XO('Oo'))
