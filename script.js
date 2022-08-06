@@ -318,3 +318,19 @@ function square (){
 //         return  ('x1= ' + x1 + ' ' + 'x2= ' + x2)
 //     }
 // }
+
+
+function sumTwoSmallestNumbers(numbers) {
+    let arr = numbers.sort( (a,b)=> {
+        if (a > b) return 1;
+        if (a == b) return 0;
+        if (a < b) return -1;
+    })
+    return arr[0] + arr[1]
+}
+
+
+console.log(
+    sumTwoSmallestNumbers([15, 28, 4, 2, 43])
+
+)
