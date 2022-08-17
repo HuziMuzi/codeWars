@@ -147,7 +147,7 @@ function fakeBin(x) {
     return x.split('').map(n => n < 5 ? 0 : 1).join('')
 }
 
-console.log(fakeBin('123456'))
+// console.log(fakeBin('123456'))
 
 
 function doubleInteger(i) {
@@ -155,7 +155,7 @@ function doubleInteger(i) {
     return i * 2;
 }
 
-console.log(doubleInteger(2))
+// console.log(doubleInteger(2))
 
 function makeNegative(num) {
     return num > 0 ? -num : num
@@ -166,7 +166,7 @@ function digitize(n) {
     return String(n).split('').reverse().map(el => parseFloat(el))
 }
 
-console.log(digitize(123456879))
+// console.log(digitize(123456879))
 
 // function setAlarm(employed, vacation){
 // 	if (employed === true && vacation === true) {
@@ -190,7 +190,7 @@ function removeChar(str){
     return str.split('').slice(1,str.length-1).join('')
 };
 
-console.log(removeChar('qwerasdf'))
+// console.log(removeChar('qwerasdf'))
 
 
 function reverseWords(str) {
@@ -198,10 +198,10 @@ function reverseWords(str) {
     return str.split('').reverse().join('').split(' ').reverse().join(' ')
 }
 
-console.log(reverseWords("This is an example!"))
+// console.log(reverseWords("This is an example!"))
 
 function solution(str){
-    console.log(str.split('').reverse().join(''))
+    // console.log(str.split('').reverse().join(''))
 }
 
 solution('world')
@@ -217,7 +217,7 @@ function paperwork(n, m) {
     return n > 0 && m > 0 ? n * m : 0
 }
 
-console.log(paperwork(5,5))
+// console.log(paperwork(5,5))
 
 const friends = ["Ryan", "Kieran", "Mark"]
 
@@ -235,7 +235,7 @@ function invert(array) {
     return array.map(el => -el )
 }
 
-console.log(invert(arr))
+// console.log(invert(arr))
 // console.log(arr[0])
 
 
@@ -243,7 +243,7 @@ function areYouPlayingBanjo(name) {
     let letter = name.split('')
    return letter[0] ==='R' || letter[0] ==='r' ? `${name} plays banjo` :`${name} does not play banjo`
 }
-console.log(areYouPlayingBanjo('Rana'))
+// console.log(areYouPlayingBanjo('Rana'))
 
 
 const array1 = [true,  true,  true,  false,
@@ -272,7 +272,7 @@ function countSheeps(arrayOfSheep) {
 }
 
 
-console.log(countSheeps(array1))
+// console.log(countSheeps(array1))
 
 // console.log(typeof Boolean)
 
@@ -328,12 +328,7 @@ function sumTwoSmallestNumbers(numbers) {
     })
     return arr[0] + arr[1]
 }
-
-
-console.log(
-    sumTwoSmallestNumbers([15, 28, 4, 2, 43])
-
-)
+// console.log(sumTwoSmallestNumbers([15, 28, 4, 2, 43]))
 
 
 // function XO(str) {
@@ -350,11 +345,16 @@ function XO(str) {
     return arr.filter(el => el === 'x').length === arr.filter(el => el === 'o').length
 }
 
-console.log(XO('Oo'))
-
-
+// console.log(XO('Oo'))
 
 function disemvowel(str) {
     return str.replace(/[aeoiu]/gi, '');
 }
-console.log(disemvowel("This website is for losers LOL!"))
+// console.log(disemvowel("This website is for losers LOL!"))
+
+
+function filter_list(l) {
+    return l.filter(el => typeof el === 'number')
+}
+
+console.log(filter_list([1,'a','b',0,15]))
