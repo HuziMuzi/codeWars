@@ -363,3 +363,11 @@ function filter_list(l) {
 function sum(numbers) {
     return numbers.reduce((a, b) => a + b, 0)
 };
+
+function DNAtoRNA(dna) {
+    // create a function which returns an RNA sequence from the given DNA sequence
+    let str = dna.split('').map(el => el === 'T' ? 'U': el).join('')
+    return str
+}
+
+console.log(DNAtoRNA("TTTTT"))
