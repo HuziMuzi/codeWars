@@ -200,11 +200,11 @@ function reverseWords(str) {
 
 // console.log(reverseWords("This is an example!"))
 
-function solution(str) {
+// function solution(str) {
     // console.log(str.split('').reverse().join(''))
-}
+// }
 
-solution('world')
+// solution('world')
 
 // function paperwork(n, m) {
 //     if (n < 0 || m < 0 ) {
@@ -213,46 +213,46 @@ solution('world')
 //     return n*m
 // }
 
-function paperwork(n, m) {
-    return n > 0 && m > 0 ? n * m : 0
-}
+// function paperwork(n, m) {
+//     return n > 0 && m > 0 ? n * m : 0
+// }
 
 // console.log(paperwork(5,5))
 
-const friends = ["Ryan", "Kieran", "Mark"]
+// const friends = ["Ryan", "Kieran", "Mark"]
 
-function friend(friends) {
+// function friend(friends) {
     //your code here
-    return friends.filter(el => el.length === 4)
-}
+//     return friends.filter(el => el.length === 4)
+// }
 
 // console.log(friend(friends))
 
 
-let arr = [1, -2, 3, -4, 5]
-
-function invert(array) {
-    return array.map(el => -el)
-}
+// let arr = [1, -2, 3, -4, 5]
+//
+// function invert(array) {
+//     return array.map(el => -el)
+// }
 
 // console.log(invert(arr))
 // console.log(arr[0])
-
-
-function areYouPlayingBanjo(name) {
-    let letter = name.split('')
-    return letter[0] === 'R' || letter[0] === 'r' ? `${name} plays banjo` : `${name} does not play banjo`
-}
+//
+//
+// function areYouPlayingBanjo(name) {
+//     let letter = name.split('')
+//     return letter[0] === 'R' || letter[0] === 'r' ? `${name} plays banjo` : `${name} does not play banjo`
+// }
 
 // console.log(areYouPlayingBanjo('Rana'))
 
 
-const array1 = [true, true, true, false,
-    true, true, true, true,
-    true, false, true, false,
-    true, false, false, true,
-    true, true, true, true,
-    false, false, true, true]
+// const array1 = [true, true, true, false,
+//     true, true, true, true,
+//     true, false, true, false,
+//     true, false, false, true,
+//     true, true, true, true,
+//     false, false, true, true]
 
 //
 // function countSheeps(arrayOfSheep) {
@@ -267,9 +267,6 @@ const array1 = [true, true, true, false,
 // }
 
 
-function countSheeps(arrayOfSheep) {
-    return arrayOfSheep.filter(el => Boolean(el)).length
-}
 
 
 // console.log(countSheeps(array1))
@@ -277,26 +274,26 @@ function countSheeps(arrayOfSheep) {
 // console.log(typeof Boolean)
 
 
-btn.addEventListener('click', square)
-
-function square() {
-    let a = +prompt('Введите a')
-    let b = +prompt('Введите b')
-    let c = +prompt('Введите c')
-    let disc = (b * b) - (4 * a * c)
-    if (disc < 0) {
-        return alert('Нет корней')
-    }
-    if (disc === 0) {
-        let x = -b / (2 * a)
-        return alert('Уравнение имеет один корень ' + x)
-    }
-    if (disc > 0) {
-        let x1 = Math.floor((-b) + Math.sqrt(disc)) / (2 * a)
-        let x2 = Math.floor((-b) - Math.sqrt(disc)) / (2 * a)
-        return alert('x1= ' + x1 + ' ' + 'x2= ' + x2)
-    }
-}
+// btn.addEventListener('click', square)
+//
+// function square() {
+//     let a = +prompt('Введите a')
+//     let b = +prompt('Введите b')
+//     let c = +prompt('Введите c')
+//     let disc = (b * b) - (4 * a * c)
+//     if (disc < 0) {
+//         return alert('Нет корней')
+//     }
+//     if (disc === 0) {
+//         let x = -b / (2 * a)
+//         return alert('Уравнение имеет один корень ' + x)
+//     }
+//     if (disc > 0) {
+//         let x1 = Math.floor((-b) + Math.sqrt(disc)) / (2 * a)
+//         let x2 = Math.floor((-b) - Math.sqrt(disc)) / (2 * a)
+//         return alert('x1= ' + x1 + ' ' + 'x2= ' + x2)
+//     }
+// }
 
 
 // function square (a,b,c){
@@ -319,14 +316,14 @@ function square() {
 // }
 
 
-function sumTwoSmallestNumbers(numbers) {
-    let arr = numbers.sort((a, b) => {
-        if (a > b) return 1;
-        if (a == b) return 0;
-        if (a < b) return -1;
-    })
-    return arr[0] + arr[1]
-}
+// function sumTwoSmallestNumbers(numbers) {
+//     let arr = numbers.sort((a, b) => {
+//         if (a > b) return 1;
+//         if (a == b) return 0;
+//         if (a < b) return -1;
+//     })
+//     return arr[0] + arr[1]
+// }
 
 // console.log(sumTwoSmallestNumbers([15, 28, 4, 2, 43]))
 
@@ -360,14 +357,34 @@ function filter_list(l) {
 
 // console.log(filter_list([1,'a','b',0,15]))
 
-function sum(numbers) {
-    return numbers.reduce((a, b) => a + b, 0)
-};
+// function sum(numbers) {
+//     return numbers.reduce((a, b) => a + b, 0)
+// };
+//
+// function DNAtoRNA(dna) {
+//     // create a function which returns an RNA sequence from the given DNA sequence
+//     let str = dna.split('').map(el => el === 'T' ? 'U': el).join('')
+//     return str
+// }
 
-function DNAtoRNA(dna) {
-    // create a function which returns an RNA sequence from the given DNA sequence
-    let str = dna.split('').map(el => el === 'T' ? 'U': el).join('')
-    return str
+// console.log(DNAtoRNA("TTTTT"))
+
+// function solution(str, ending){
+//     let strSravn = null
+//     for (let i = ending.length; i === 0; i--) {
+//         strSravn = str[str.length-i]
+//     }
+//     console.log(strSravn)
+//     return strSravn
+    // return (str[str.length-2] + str[str.length-1]) === ending
+// }
+
+
+// console.log(solution('abac', 'bc'))
+// console.log(solution('abcde', 'cde'))
+
+class Kata {
+    static getVolumeOfCuboid(length, width, height) {
+        return length * width * height
+    }
 }
-
-console.log(DNAtoRNA("TTTTT"))
