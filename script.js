@@ -388,3 +388,39 @@ class Kata {
         return length * width * height
     }
 }
+
+
+var countSheep = function (num){
+    //your code here
+    let result = ''
+    for (let i = 1; i <=num; i++) {
+        if (num === 0) {
+            result = ""
+        } else {
+            result += [i] + ' ' + 'sheep...'
+        }
+    }
+    return result
+}
+
+// console.log(countSheep(5))
+
+// Write a function "greet" that returns "hello world!"
+// function greet () {
+//     return 'hello world!'
+// }
+
+
+function descendingOrder(n){
+    //...
+    // let arr = n.toString().split('').map(n => parseInt(n))
+    // let arrNumb = arr.sort((a,b) => {
+    //     if (a < b) return 1
+    //     if (a === b) return 0
+    //     if (a > b) return -1
+    // })
+    // return Number(arrNumb.join(''))
+    return parseInt(String(n).split('').sort().reverse().join(''))
+}
+
+console.log(descendingOrder(12345))
