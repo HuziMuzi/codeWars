@@ -423,4 +423,29 @@ function descendingOrder(n){
     return parseInt(String(n).split('').sort().reverse().join(''))
 }
 
-console.log(descendingOrder(12345))
+// console.log(descendingOrder(12345))
+
+function lovefunc(flower1, flower2){
+    // moment of truth
+    return (!(Number(flower1) % 2 === 0 && Number(flower2) % 2 === 0))
+}
+
+// console.log(lovefunc(2, 2))
+
+
+// Array.prototype.reverse = function() {
+//     let arr = new Array
+//     for(let i = Array.length; i >=0; i--) {
+//         arr.push(Array[i])
+//
+//     }
+//     return arr
+// };
+//
+//
+// console.log([1,2,3,4,5].reverse())
+
+
+function likeOrDislike(buttons) {
+    return buttons.reduce( (acc,el) => el===acc ? "Nothing" : el , "Nothing");
+}
