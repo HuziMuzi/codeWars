@@ -201,7 +201,7 @@ function reverseWords(str) {
 // console.log(reverseWords("This is an example!"))
 
 // function solution(str) {
-    // console.log(str.split('').reverse().join(''))
+// console.log(str.split('').reverse().join(''))
 // }
 
 // solution('world')
@@ -222,7 +222,7 @@ function reverseWords(str) {
 // const friends = ["Ryan", "Kieran", "Mark"]
 
 // function friend(friends) {
-    //your code here
+//your code here
 //     return friends.filter(el => el.length === 4)
 // }
 
@@ -265,8 +265,6 @@ function reverseWords(str) {
 //     }
 //     return count
 // }
-
-
 
 
 // console.log(countSheeps(array1))
@@ -376,7 +374,7 @@ function filter_list(l) {
 //     }
 //     console.log(strSravn)
 //     return strSravn
-    // return (str[str.length-2] + str[str.length-1]) === ending
+// return (str[str.length-2] + str[str.length-1]) === ending
 // }
 
 
@@ -390,10 +388,10 @@ class Kata {
 }
 
 
-var countSheep = function (num){
+var countSheep = function (num) {
     //your code here
     let result = ''
-    for (let i = 1; i <=num; i++) {
+    for (let i = 1; i <= num; i++) {
         if (num === 0) {
             result = ""
         } else {
@@ -411,7 +409,7 @@ var countSheep = function (num){
 // }
 
 
-function descendingOrder(n){
+function descendingOrder(n) {
     //...
     // let arr = n.toString().split('').map(n => parseInt(n))
     // let arrNumb = arr.sort((a,b) => {
@@ -425,7 +423,7 @@ function descendingOrder(n){
 
 // console.log(descendingOrder(12345))
 
-function lovefunc(flower1, flower2){
+function lovefunc(flower1, flower2) {
     // moment of truth
     return (!(Number(flower1) % 2 === 0 && Number(flower2) % 2 === 0))
 }
@@ -447,14 +445,29 @@ function lovefunc(flower1, flower2){
 
 
 function likeOrDislike(buttons) {
-    return buttons.reduce( (acc,el) => el===acc ? "Nothing" : el , "Nothing");
+    return buttons.reduce((acc, el) => el === acc ? "Nothing" : el, "Nothing");
 }
 
 
-function isTriangle(a,b,c)
-{
-    if(a > 0 && b > 0 && c > 0) {
-        return !((a + b) <= c || (b + c) <= a || (a + c) <= b)
+// function isTriangle(a,b,c)
+// {
+//     if(a > 0 && b > 0 && c > 0) {
+//         return !((a + b) <= c || (b + c) <= a || (a + c) <= b)
+//     }
+//     return false;
+// }
+
+
+function countPositivesSumNegatives(input) {
+    // your code here
+    let positive = 0
+    let sumNegative = 0
+    if (input !== null)
+    for (let i = 0; i < input.length; i++) {
+        if (input[i] > 0) positive +=1
+        if (input[i] < 0) sumNegative += input[i]
     }
-    return false;
-}љ
+    return (positive === 0 && sumNegative === 0) ? []: [positive,sumNegative]
+}
+
+console.log(countPositivesSumNegatives([0, 2, 3, 0, 5, 6, 7, 8, 9, 10, -11, -12, -13, -14]))
