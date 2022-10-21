@@ -463,11 +463,19 @@ function countPositivesSumNegatives(input) {
     let positive = 0
     let sumNegative = 0
     if (input !== null)
-    for (let i = 0; i < input.length; i++) {
-        if (input[i] > 0) positive +=1
-        if (input[i] < 0) sumNegative += input[i]
-    }
-    return (positive === 0 && sumNegative === 0) ? []: [positive,sumNegative]
+        for (let i = 0; i < input.length; i++) {
+            if (input[i] > 0) positive += 1
+            if (input[i] < 0) sumNegative += input[i]
+        }
+    return (positive === 0 && sumNegative === 0) ? [] : [positive, sumNegative]
 }
 
-console.log(countPositivesSumNegatives([0, 2, 3, 0, 5, 6, 7, 8, 9, 10, -11, -12, -13, -14]))
+// console.log(countPositivesSumNegatives([0, 2, 3, 0, 5, 6, 7, 8, 9, 10, -11, -12, -13, -14]))
+
+function stray(numbers) {
+    let numbSort = numbers.sort()
+    let num = (numbSort[0] === numbSort[1]) ? numbSort[numbSort.length-1]: numbSort[0]
+    return num
+}
+
+console.log(stray([1, 1, 0]))
