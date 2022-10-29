@@ -458,24 +458,50 @@ function likeOrDislike(buttons) {
 // }
 
 
-function countPositivesSumNegatives(input) {
-    // your code here
-    let positive = 0
-    let sumNegative = 0
-    if (input !== null)
-        for (let i = 0; i < input.length; i++) {
-            if (input[i] > 0) positive += 1
-            if (input[i] < 0) sumNegative += input[i]
-        }
-    return (positive === 0 && sumNegative === 0) ? [] : [positive, sumNegative]
-}
+// function countPositivesSumNegatives(input) {
+//     // your code here
+//     let positive = 0
+//     let sumNegative = 0
+//     if (input !== null)
+//         for (let i = 0; i < input.length; i++) {
+//             if (input[i] > 0) positive += 1
+//             if (input[i] < 0) sumNegative += input[i]
+//         }
+//     return (positive === 0 && sumNegative === 0) ? [] : [positive, sumNegative]
+// }
 
 // console.log(countPositivesSumNegatives([0, 2, 3, 0, 5, 6, 7, 8, 9, 10, -11, -12, -13, -14]))
 
-function stray(numbers) {
-    let numbSort = numbers.sort()
-    let num = (numbSort[0] === numbSort[1]) ? numbSort[numbSort.length-1]: numbSort[0]
-    return num
+// function stray(numbers) {
+//     let numbSort = numbers.sort()
+//     let num = (numbSort[0] === numbSort[1]) ? numbSort[numbSort.length-1]: numbSort[0]
+//     return num
+// }
+//
+// console.log(stray([1, 1, 0]))
+
+
+
+function getSum( a,b ) {
+    let sum = 0
+
+    if (a === b){
+        return a
+    }
+
+    if (a < b) {
+
+        for (let i = a; i <=b; i++) {
+            sum += i
+            console.log(i)
+        }
+    } else{
+        for (let i = a; i >=b; i--) {
+            sum += i
+            console.log(i)
+        }
+    }
+    return sum
 }
 
-console.log(stray([1, 1, 0]))
+console.log(getSum(0,-1))
