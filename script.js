@@ -481,27 +481,45 @@ function likeOrDislike(buttons) {
 // console.log(stray([1, 1, 0]))
 
 
+//
+// function getSum( a,b ) {
+//     let sum = 0
+//
+//     if (a === b){
+//         return a
+//     }
+//
+//     if (a < b) {
+//
+//         for (let i = a; i <=b; i++) {
+//             sum += i
+//             console.log(i)
+//         }
+//     } else{
+//         for (let i = a; i >=b; i--) {
+//             sum += i
+//             console.log(i)
+//         }
+//     }
+//     return sum
+// }
+//
+// console.log(getSum(0,-1))
 
-function getSum( a,b ) {
-    let sum = 0
 
-    if (a === b){
-        return a
+
+function howMuchILoveYou(nbPetals) {
+    // your code
+    let obj = {
+        1:"I love you",
+        2:"a little",
+        3:"a lot",
+        4:"passionately",
+        5:"madly",
+        6: "not at all",
     }
-
-    if (a < b) {
-
-        for (let i = a; i <=b; i++) {
-            sum += i
-            console.log(i)
-        }
-    } else{
-        for (let i = a; i >=b; i--) {
-            sum += i
-            console.log(i)
-        }
-    }
-    return sum
+    return obj[nbPetals % 6]
 }
 
-console.log(getSum(0,-1))
+
+console.log(howMuchILoveYou(2))
