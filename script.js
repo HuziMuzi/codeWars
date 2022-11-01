@@ -523,3 +523,8 @@ function howMuchILoveYou(nbPetals) {
 
 
 console.log(howMuchILoveYou(2))
+
+function twiceAsOld(dadYearsOld, sonYearsOld) {
+    // your code here
+    return Math.abs(sonYearsOld*2 - dadYearsOld)
+}
