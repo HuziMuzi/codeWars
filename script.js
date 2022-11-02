@@ -546,3 +546,7 @@ function basicOp(operation, value1, value2)
 }
 
 console.log(basicOp('+',1,2))
+
+function smash (words) {
+    return words.join(' ')
+};
