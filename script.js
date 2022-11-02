@@ -522,9 +522,27 @@ function howMuchILoveYou(nbPetals) {
 }
 
 
-console.log(howMuchILoveYou(2))
+// console.log(howMuchILoveYou(2))
 
-function twiceAsOld(dadYearsOld, sonYearsOld) {
-    // your code here
-    return Math.abs(sonYearsOld*2 - dadYearsOld)
+// function twiceAsOld(dadYearsOld, sonYearsOld) {
+//     // your code here
+//     return Math.abs(sonYearsOld*2 - dadYearsOld)
+// }
+
+
+function basicOp(operation, value1, value2)
+{
+    switch (operation){
+        case '+' :
+            return value1 + value2
+        case '-':
+            return value1 - value2
+        case '*':
+            return value1 * value2
+        default : {
+            return value1 / value2
+        }
+    }
 }
+
+console.log(basicOp('+',1,2))
