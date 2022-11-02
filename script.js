@@ -550,3 +550,9 @@ console.log(basicOp('+',1,2))
 function smash (words) {
     return words.join(' ')
 };
+
+function checkForFactor (base, factor) {
+    // code here
+
+    return base % factor === 0
+}
