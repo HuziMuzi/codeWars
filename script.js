@@ -556,3 +556,8 @@ function checkForFactor (base, factor) {
 
     return base % factor === 0
 }
+
+function testEven(n) {
+    //Your awesome code here!
+    return n % 2 === 0
+}
