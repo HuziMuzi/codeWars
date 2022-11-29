@@ -568,5 +568,16 @@ function finalGrade (exam, projects) {
     else if (exam > 50 && projects >= 2) {return 75} else{
         return 0
     }
-    return
 }
+
+
+function betterThanAverage(classPoints, yourPoints) {
+    // Your code here
+    classPoints.push(yourPoints)
+
+    const result =  classPoints.reduce((sum, current) => sum + current, 0);
+    return result/(classPoints.length + 1) < yourPoints
+
+}
+
+console.log(betterThanAverage([3,4,5], 1))
