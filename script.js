@@ -611,4 +611,9 @@ function validatePIN(pin) {
     return /^\d{4}(\d\d)?$/.test(pin);
 }
 
-console.log(validatePIN("-2.123"))
+
+function repeatStr (n, s) {
+    return s.repeat(n)
+}
+
+console.log(repeatStr(3,'i'))
