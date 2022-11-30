@@ -545,7 +545,7 @@ function basicOp(operation, value1, value2)
     }
 }
 
-console.log(basicOp('+',1,2))
+// console.log(basicOp('+',1,2))
 
 function smash (words) {
     return words.join(' ')
@@ -580,7 +580,7 @@ function betterThanAverage(classPoints, yourPoints) {
 
 }
 
-console.log(betterThanAverage([3,4,5], 1))
+// console.log(betterThanAverage([3,4,5], 1))
 
 
 
@@ -606,3 +606,9 @@ function greet(language) {
     }
     return greeting[language] ? greeting[language] : greeting.english
 }
+
+function validatePIN(pin) {
+    return /^\d{4}(\d\d)?$/.test(pin);
+}
+
+console.log(validatePIN("-2.123"))
