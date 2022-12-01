@@ -616,4 +616,26 @@ function repeatStr (n, s) {
     return s.repeat(n)
 }
 
-console.log(repeatStr(3,'i'))
+// console.log(repeatStr(3,'i'))
+
+
+function gooseFilter (birds) {
+    var geese = ["African", "Roman Tufted", "Toulouse", "Pilgrim", "Steinbacher"];
+
+    const res = geese.map(gus => {
+        birds.filter((el, index) => el !==geese[index])
+    })
+    return birds.filter((el, index) => {
+        if (el.includes(geese[i])) {
+
+        }
+    })
+};
+
+console.log(gooseFilter(["Mallard", "Hook Bill", "African", "Crested", "Pilgrim", "Toulouse", "Blue Swedish"]))
+
+
+function findNeedle(haystack) {
+    // your code here
+    return `found the needle at position ${haystack.indexOf('needle')}`
+}
